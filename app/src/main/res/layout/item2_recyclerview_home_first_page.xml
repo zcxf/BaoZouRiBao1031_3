@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_thumbnail_item_recyclerView_home_home"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/textView_title_item_recyclerView_home_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageView_thumbnail_item_recyclerView_home_home"
+            android:text="这是标题"/>
+
+        <ImageView
+            android:id="@+id/imageView_author_avatar_item_recyclerView_home_home"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignLeft="@id/textView_title_item_recyclerView_home_home"
+            android:layout_below="@id/textView_title_item_recyclerView_home_home"
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/textView_authorName_item_recyclerView_home_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_title_item_recyclerView_home_home"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageView_author_avatar_item_recyclerView_home_home"
+            android:text="姓名"
+            android:textSize="11dp"/>
+
+        <TextView
+            android:id="@+id/textView_recommend_item_recyclerView_home_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_title_item_recyclerView_home_home"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/textView_authorName_item_recyclerView_home_home"
+            android:text="| 推荐"
+            android:textSize="11dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
